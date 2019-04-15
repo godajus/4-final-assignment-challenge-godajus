@@ -1,132 +1,278 @@
-html {
-  box-sizing: border-box;
+/* Glogal styles
+--------------------*/
+html
+{
+    box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after
+{
+    box-sizing: inherit;
 }
 
 
-}
-h1,h2 {
-    font-family: 'Indie Flower', cursive;
 
+body
+{
+    font-family: 'Source Serif Pro', serif;
+    line-height: 1;
+    margin: 0;
+    text-align: center;
 }
-h1{
-    font-size: 80px;
+
+.uppercase
+{
+    text-transform: uppercase;
 }
-h2 {
-    font-size: 40px;
-    margin-top: 0;
-}
-h3 {
+
+h3 ~ p
+{
     margin: 0;
 }
 
- a {
-    color: #F4E04D;
- }
-
-a:hover {
-    text-decoration: none;
-
-/*Header and Footer
-----------------------*/
-header, footer {
-    background:#564592;
-    color: #E5FCF5;
-}
-/* header */
-.image {
-    border-radius:50%;  
-}
-header{
-    padding-top: 50px;
-    position:relative;
-}
-header h1, header h2{
-    color:#FEFFFE;
-    margin:0;
-}
-.download {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-/* footer */
-footer {
-    text-align: center;
-}
-.info a {
-background: black;
-padding: 10px;
-display: inline-block;
-}
-/*Navigation
--------------------*/
-nav {
-    text-align: center;
-    background: white;
-    position: fixed;
-    top:0;
-    width: 100%;
-}
-nav a {
-    display:inline-block;
-    padding: 15px 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
+.image
+{
+    float: left;
+    width: 30%;
+    border-radius: 50%;
 }
 
+.assign
+{
+    width: 70%;
+}
 
+.content
+{
+    overflow: auto;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 60px 50px;
+}
 
-/*Work experience{}
-----------------------*/
-.work {
-    background:#EDF67D;
+h1,
+h2
+{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    color: white;
 }
-h3 ~ p {
-margin: 0;
+
+p
+{
+    padding: 15px 10px;
 }
-.job-desc {
-    margin-bottom: 25px;
+
+h3
+{
+    margin: 0;
+    padding: 15px 10px;
 }
-.job-desc p:first-of-type {
+
+h2
+{
     margin-top: 0;
 }
 
-
-/*Education
-----------------------*/
-
-.education {
-  background: linear-gradient(rgba(202, 125, 249, 0.8), rgba(252, 135, 120, 0.5)),
-              url(../images/wall.jpg) no-repeat fixed;
-              background-size: cover;
-         
+a
+{
+    color: purple;
 }
-p + h3 {
-    margin-top: 30px;
+a:hover
+{
+    text-decoration: none;
 }
-/*Media Queries
-----------------------*/
-@media (min-width: 850px){
-.col-n {
-    width:30%;
+
+.col-w
+{
     float: left;
+    width: 70%;
+    padding-left: 20px;
 }
-.col-w {
-    width:70%;
-    float:left;
-    padding-left:20px;
+
+.col-n
+{
+    float: left;
+    width: 30%;
 }
+
+
+.btn
+{
+    display: inline-block;
+    padding: 35px;
+    text-decoration: none;
+    color: white;
+    background: #0B0E0E;
+    border-radius: 20px;
+}
+
+.btn:hover
+{
+    background: white;
+    color: #0B0E0E;
+}
+
+/* Header and Footer
+--------------------*/
+header h2:before
+{
+    font-size: 35px;
+    content: '\201C';
+    color: white;
+}
+
+header
+{
+    position: relative;
+    padding-top: 50px;
+    color: white;
+    background: yellow;
+}
+
+header h2:after
+{
+    font-size: 35px;
+    content: '\201D';
+    color: white;
+}
+
+header h1
+{
+    font-size: 80px;
+}
+
+header h2
+{
+    font-family: 'Playball', cursive;
+    font-size: 24px;
+    margin: 0;
+}
+
+footer
+{
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(188, 248, 236, 0)),
+    url(https://i.pinimg.com/736x/a6/5d/9d/a65d9df33a5989e4b74564517b6d2a7b--monochrome-pattern-black-white-pattern.jpg) no-repeat fixed;
+    background-size: cover;
+}
+header p
+{
+        color: white;
+}
+
+footer p
+{
+    background-color: black;
+    color: white;
+}
+
+
+.info a
+{
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    color: white;
+    background: #0B0E0E;
+}
+
+/* Navigation
+--------------------*/
+nav a
+{
+    font-weight: 700;
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+nav a:hover
+{
+    background: red;
+    color: #0B0E0E;
+}
+
+nav
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #0B0E0E;
+}
+
+
+/* Work Experience
+--------------------*/
+.work
+{
+    background: #D741A7;
+}
+.work h2,
+.work h3
+{
+    color: white;
+}
+.work p,
+.work ul
+{
+    color: white;
+}
+.job-desc
+{
+    margin-bottom: 25px;
+}
+.job-desc p:first-of-type
+{
+    margin-top: 0;
+}
+/* Education
+--------------------*/
+.education
+{
+    background: #0C212C;
+}
+.edu-desc
+{
+    margin-bottom: 25px;
+}
+.education h2,
+.education h3
+{
+    color: white;
+}
+.education p
+{
+    color: white;
+}
+
+/* Media Queries
+--------------------*/
+
+
+@media (min-width: 850px)
+{
+    .col-w
+    {
+        float: left;
+        width: 70%;
+        padding-left: 20px;
+    }
+
+    .col-n
+    {
+        float: left;
+        width: 30%;
+    }
+}
+
 @media (max-width: 849px)
 {
-    header 
+    header
     {
-        text-align: center;
-    }
-    .image {
-        width: 150px;
+        text-allign: left;
     }
 }
