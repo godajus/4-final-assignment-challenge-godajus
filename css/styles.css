@@ -5,9 +5,6 @@ html {
   box-sizing: inherit;
 }
 
-body {
-    font-family: 'Quicksand', sans-serif;
-    margin: 0;
 
 }
 h1,h2 {
@@ -31,24 +28,7 @@ h3 {
 
 a:hover {
     text-decoration: none;
-}
-.content-wrap {
-    max-width: 950px;
-    margin: 0 auto;
-    padding: 60px 50px;
-    overflow: auto;
-}
 
-.uppercase {
-    text-transform: uppercase;
-}
-.btn {
-    text-decoration: none;
-    background: red;
-    color: white;
-    padding: 10px;
-    display: inline-block;
-}
 /*Header and Footer
 ----------------------*/
 header, footer {
