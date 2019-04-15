@@ -1,0 +1,275 @@
+/* Color pallete
+--------------------
+#BCF8EC - Pale Turqoise
+#AED9E0 - Light Blue
+#9FA0C3 - Blue Bell
+#8B687F - Antique Fuchsia
+#7B435B - Deep Ruby
+*/
+
+
+/* Glogal styles
+--------------------*/
+html
+{
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after
+{
+    box-sizing: inherit;
+}
+
+
+
+body
+{
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1;
+    margin: 0;
+    text-align: center;
+}
+
+.uppercase
+{
+    text-transform: uppercase;
+}
+
+h3 ~ p
+{
+    margin: 0;
+}
+
+.image
+{
+    float: left;
+    width: 30%;
+    border-radius: 50%;
+}
+
+.assign
+{
+    width: 70%;
+}
+
+.content
+{
+    overflow: auto;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 60px 50px;
+}
+
+h1,
+h2
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+}
+
+p
+{
+    padding: 15px 10px;
+}
+
+h3
+{
+    margin: 0;
+    padding: 15px 10px;
+}
+
+h2
+{
+    margin-top: 0;
+}
+
+a
+{
+    color: purple;
+}
+a:hover
+{
+    text-decoration: none;
+}
+
+.col-w
+{
+    float: left;
+    width: 70%;
+    padding-left: 20px;
+}
+
+.col-n
+{
+    float: left;
+    width: 30%;
+}
+
+.btn
+{
+    display: inline-block;
+    padding: 35px;
+    text-decoration: none;
+    color: white;
+    background: #1fa0c3;
+}
+
+.btn:hover
+{
+    background: #1fd0c2;
+}
+
+/* Header and Footer
+--------------------*/
+header h2:before
+{
+    font-size: 35px;
+    content: '\201C';
+    color: #51d1b7;
+}
+
+header
+{
+    position: relative;
+    padding-top: 50px;
+    color: #51d1b7;
+    background: #bcf8ec;
+}
+
+header h2:after
+{
+    font-size: 35px;
+    content: '\201D';
+    color: #51d1b7;
+}
+
+header h1
+{
+    font-size: 80px;
+}
+
+header h2
+{
+    font-family: 'Bad Script', cursive;
+    font-size: 24px;
+    margin: 0;
+}
+
+footer
+{
+    color: #51d1b7;
+    background: linear-gradient(rgba(188, 248, 236, 1), rgba(188, 248, 236, 0)),
+    url(https://www.muralswallpaper.co.uk/app/uploads/pattern-clouds-pink-and-blue-nursery-plain-820x532.jpg) no-repeat fixed;
+    background-size: cover;
+}
+header p,
+footer p
+{
+    color: #2c7264;
+}
+
+.info a
+{
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    background: lightpink;
+}
+
+/* Navigation
+--------------------*/
+nav a
+{
+    font-weight: 700;
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover
+{
+    background: #13f1b7;
+}
+
+nav
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+}
+
+
+/* Work Experience
+--------------------*/
+.work
+{
+    background: #aed9e0;
+}
+.work h2,
+.work h3
+{
+    color: #4b9ba8;
+}
+.work p,
+.work ul
+{
+    color: #11707f;
+}
+.job-desc
+{
+    margin-bottom: 25px;
+}
+.job-desc p:first-of-type
+{
+    margin-top: 0;
+}
+/* Education
+--------------------*/
+.education
+{
+    background: #9fa0c3;
+}
+.edu-desc
+{
+    margin-bottom: 25px;
+}
+.education h2,
+.education h3
+{
+    color: #382a72;
+}
+.education p
+{
+    color: #383a72;
+}
+
+/* Media Queries
+--------------------*/
+
+
+@media (min-width: 850px)
+{
+    .col-w
+    {
+        float: left;
+        width: 70%;
+        padding-left: 20px;
+    }
+
+    .col-n
+    {
+        float: left;
+        width: 30%;
+    }
+}
+
+@media (max-width: 849px)
+{
+    header
+    {
+        text-allign: left;
+    }
+}
